@@ -1,6 +1,6 @@
 # schmaker
 Schedule Maker for NCSSM 2017-18,
-working link @ [msakarvadia.github.io/schmaker/](msakarvadia.github.io/schmaker/)
+working link @ [msakarvadia.github.io/schmaker/](https://msakarvadia.github.io/schmaker/)
 
 ## index.html
 table for blank timetable
