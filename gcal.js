@@ -1,16 +1,16 @@
       // Your Client ID can be retrieved from your project in the Google
       // Developer Console, https://console.developers.google.com
 //      var CLIENT_ID = '607218385891-i3amg4qiptpgfmtenuqannj1jeskh5lv.apps.googleusercontent.com'; //sayans old key
-     var CLIENT_ID = '103731949089-auj73gh4jsur19t5rd2o0o3ui5voorhp.apps.googleusercontent.com';
+     var CLIENT_ID = '1057999827636-f8811je8ccetc6hs15h82ca41gdp59c2.apps.googleusercontent.com';
 
       var SCOPES = ["https://www.googleapis.com/auth/calendar"];
-    
+
       var CAL_ID;
       var EVENT_IDS = [];
-      
+
       var DELAY; //queue index
       var INTERVAL = 300; //time diff for calls in ms
-      
+
       /**
        * Check if current user has authorized this application.
        */
@@ -31,7 +31,7 @@
       function handleAuthResult(authResult) {
         var authorizeDiv = document.getElementById('authorize-div');
         var gcalDiv = document.getElementById('gcalendar-div');
-        
+
         if (authResult && !authResult.error) {
           // Hide auth UI, then load client library.
           authorizeDiv.style.display = 'none';
@@ -56,11 +56,11 @@
           handleAuthResult);
         return false;
       }
-      
+
       function handleCreateGCalClick(event) {
         makeCalendar();
       }
-      
+
       /**
        * Load Google Calendar client library. List upcoming events
        * once client library is loaded.
@@ -68,7 +68,7 @@
       function loadCalendarApi() {
         gapi.client.load('calendar', 'v3'); //formerly gapi.client.load('calendar', 'v3', listUpcomingEvents);
       }
-    
+
       /**
        * makes new calendar
        * with javascript request to Google API
@@ -81,7 +81,7 @@
           'summary': 'Tri ' + TRI + ' Schedule',
           'timeZone': 'America/New_York'
         });
-        
+
         request.execute(function(cal) {
           appendPre('Calendar created: \n\tid: ' + cal.id + '\n\tname: ' + cal.summary + '\n\tvisit calendar.google.com');
           CAL_ID = cal.id;
@@ -90,11 +90,11 @@
         });
         return false;
       }
-    
+
       /**
        * recursively makes events in previously made google calendar
        * uses data from data.js
-       * 
+       *
        */
       function makeEvents() {
         var date;
@@ -105,7 +105,7 @@
         } else {
             date = date3;
         }
-        
+
         DELAY = 0;
         for (var i=0; i<COURSES.length; i++) {
             var name = COURSES[i].name;
@@ -143,9 +143,9 @@
                 }
             }
         }
-        
+
         appendPre('Events created');
-        
+
         //add holidays/extended events to holidayEvents
         var holidayEvents = [];
         for (var i=0; i<holidays/2; i+=2) {
@@ -164,7 +164,7 @@
                 });
             }
         }
-        
+
         //remove holiday events
         for (var i=0; i<holidayEvents.length; i++) {
             var request = gapi.client.calendar.events.patch({
@@ -176,10 +176,10 @@
                 //appendPre('Holiday removed: ' + event.htmlLink);
             });
         }
-        
+
         //appendPre('Holidays removed');
       }
-      
+
       /**
        * delay each event call to prevent 503 error
        */
@@ -189,7 +189,7 @@
               newEvent(name, block, d, pd, date);
           }
       }
-      
+
       /**
        * send insert event request to API
        */
@@ -213,7 +213,7 @@
                 'RRULE:FREQ=WEEKLY;UNTIL=' + date['end']
             ]
         }
-        
+
         var request = gapi.client.calendar.events.insert({
             'calendarId': CAL_ID,
             'resource': event
