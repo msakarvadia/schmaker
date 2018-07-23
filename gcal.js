@@ -1,9 +1,8 @@
       // Your Client ID can be retrieved from your project in the Google
       // Developer Console, https://console.developers.google.com
 //      var CLIENT_ID = '607218385891-i3amg4qiptpgfmtenuqannj1jeskh5lv.apps.googleusercontent.com'; //sayans old key
-      var CLIENT_ID = '1057999827636-f8811je8ccetc6hs15h82ca41gdp59c2.apps.googleusercontent.com';
 	var CLIENT_ID = '1057999827636-afj75l3ej8nb3k7rltscclq4g5t602hc.apps.googleusercontent.com';
-//      var SCOPES = ["https://www.googleapis.com/auth/calendar"]; 
+      var SCOPES = ["https://www.googleapis.com/auth/calendar"]; 
 
       var CAL_ID;
       var EVENT_IDS = [];
