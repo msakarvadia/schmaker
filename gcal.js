@@ -2,7 +2,7 @@
      // Developer Console, https://console.developers.google.com
 //      var CLIENT_ID = '607218385891-i3amg4qiptpgfmtenuqannj1jeskh5lv.apps.googleusercontent.com'; //sayans old key
 //    var CLIENT_ID = '103731949089-auj73gh4jsur19t5rd2o0o3ui5voorhp.apps.googleusercontent.com'; //Jkelley's old Jkelley
-    var CLIENT_ID = '217114679640-ksnsbdsfrt5qcdggsoan8rbmiqo5f2t2.apps.googleusercontent.com';
+    var CLIENT_ID = '956268806564-qfi6nl3ct19nfj3umvkkj0epled038rf.apps.googleusercontent.com';
 
      var SCOPES = ["https://www.googleapis.com/auth/calendar"];
 
