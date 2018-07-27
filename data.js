@@ -40,30 +40,30 @@ var endTime = {
 }
 
 var date1 = { //dateTime date followed by # of times recurring for tri 1 periods in Google Event making
-    1: '2017-08-21',
-    2: '2017-08-15',
-    3: '2017-08-16',
-    4: '2017-08-17',
-    5: '2017-08-18',
-    end: '20171027T000000Z'
+    1: '2018-08-21',
+    2: '2018-08-15',
+    3: '2018-08-16',
+    4: '2018-08-17',
+    5: '2018-08-18',
+    end: '20181027T000000Z'
 }
 
 var date2 = { //dateTime date followed by # of times recurring for tri 2 periods in Google Event making
-    1: '2017-11-13',
-    2: '2017-11-07',
-    3: '2017-11-08',
-    4: '2017-11-09',
-    5: '2017-11-10',
-    end: '20180206T000000Z'
+    1: '2018-11-13',
+    2: '2018-11-07',
+    3: '2018-11-08',
+    4: '2018-11-09',
+    5: '2018-11-10',
+    end: '20190206T000000Z'
 }
 
 var date3 = { //dateTime date followed by # of times recurring for tri 2 periods in Google Event making
-    1: '2018-02-26',
-    2: '2018-02-27',
-    3: '2018-02-28',
-    4: '2018-03-01',
-    5: '2018-03-02',
-    end: '20180520T000000Z'
+    1: '2019-02-26',
+    2: '2019-02-27',
+    3: '2019-02-28',
+    4: '2019-03-01',
+    5: '2019-03-02',
+    end: '20190520T000000Z'
 }
 
 var holidays = //timeMin/timeMax when searching event instances i%2=0: min, i%2=1: max
