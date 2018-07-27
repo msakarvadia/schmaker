@@ -146,7 +146,7 @@
        }
 
        appendPre('Events created');
-
+/*
        //add holidays/extended events to holidayEvents
        var holidayEvents = [];
        for (var i=0; i<holidays/2; i+=2) {
@@ -177,7 +177,7 @@
                //appendPre('Holiday removed: ' + event.htmlLink);
            });
        }
-/*
+*/
        var calendar = CalendarApp.getCalendarsByID(CAL_ID)[0];
        for (var i=0; i<len(holidays)/2; i+=2){
        var events = calendar.getEvents(holidays[i], holidays[i+1]);
@@ -187,7 +187,7 @@
             console.log(ev.getTitle()); // show event name in log
             ev.deleteEvent();
             }
-*/
+
        //appendPre('Holidays removed');
      }
 
