@@ -146,7 +146,7 @@
        }
 
        appendPre('Events created');
-
+/*
        //add holidays/extended events to holidayEvents
        var holidayEvents = [];
        for (var i=0; i<len(holidays)/2; i+=2) {
@@ -177,9 +177,20 @@
                //appendPre('Holiday removed: ' + event.htmlLink);
            });
        }
+*/
+       var calendar = CalendarApp.getCalendarsByName(CAL_ID)[0];
+       for (var i=0; i<len(holidays)/2; i+=2){
+       var events = calendar.getEvents(holidays[i], holidays[i+1]);
+        }
+       for(var i=0; i<events.length;i++){
+            var ev = events[i];
+            Logger.log(ev.getTitle()); // show event name in log
+            ev.deleteEvent();
+            }
 
        //appendPre('Holidays removed');
      }
+
 
      /**
       * delay each event call to prevent 503 error
