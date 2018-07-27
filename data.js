@@ -67,17 +67,17 @@ var date3 = { //dateTime date followed by # of times recurring for tri 2 periods
 }
 
 var holidays = //timeMin/timeMax when searching event instances i%2=0: min, i%2=1: max
-    ['2018-08-31T00:00:00', '2018-09-03T00:00:00', //labor day extended 1
-     '2018-09-28T00:00:00', '2018-10-01T00:00:00', // 2nd extended
-     '2018-10-29T00:00:00', '2018-11-06T00:00:00',  //tri 1 exam + tri 1 break
-    '2018-11-16T00:00:00', '2018-11-25T00:00:00', // thanksgiving break
-    '2018-12-21T00:00:00', '2019-01-06T00:00:00', // winter break
-    '2019-01-21T00:00:00', '2019-01-22T00:00:00', // Martin luther kingjr
-    '2019-01-24T00:00:00', '2019-01-27T00:00:00', // extended
-    '2019-02-11T00:00:00', '2019-03-01T00:00:00', // tri 2 exams + tri break + miniterm
-    '2019-03-22T00:00:00', '2019-03-25T00:00:00',          // extended
-    '2019-04-18T00:00:00', '2019-04-28T00:00:00', // spring break
-    '2019-05-20T00:00:00', '2019-05-22T00:00:00' // tri 3 exams
+    ['2018-08-31T00:00:00', '2018-09-04T00:00:00', //labor day extended 1
+     '2018-09-28T00:00:00', '2018-10-02T00:00:00', // 2nd extended
+     '2018-10-29T00:00:00', '2018-11-07T00:00:00',  //tri 1 exam + tri 1 break
+    '2018-11-16T00:00:00', '2018-11-26T00:00:00', // thanksgiving break
+    '2018-12-21T00:00:00', '2019-01-07T00:00:00', // winter break
+    '2019-01-21T00:00:00', '2019-01-23T00:00:00', // Martin luther kingjr
+    '2019-01-24T00:00:00', '2019-01-28T00:00:00', // extended
+    '2019-02-11T00:00:00', '2019-03-02T00:00:00', // tri 2 exams + tri break + miniterm
+    '2019-03-22T00:00:00', '2019-03-26T00:00:00',          // extended
+    '2019-04-18T00:00:00', '2019-04-29T00:00:00', // spring break
+    '2019-05-20T00:00:00', '2019-05-23T00:00:00' // tri 3 exams
     ];
 
 
