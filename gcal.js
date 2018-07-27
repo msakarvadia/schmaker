@@ -146,10 +146,10 @@
        }
 
        appendPre('Events created');
-/*
+
        //add holidays/extended events to holidayEvents
        var holidayEvents = [];
-       for (var i=0; i<len(holidays)/2; i+=2) {
+       for (var i=0; i<holidays/2; i+=2) {
            for (var j=0; j<EVENT_IDS.length; j++) {
                var request = gapi.client.calendar.events.instances({
                    'calendarId': CAL_ID,
@@ -177,17 +177,17 @@
                //appendPre('Holiday removed: ' + event.htmlLink);
            });
        }
-*/
-       var calendar = CalendarApp.getCalendarsByName(CAL_ID)[0];
+/*
+       var calendar = CalendarApp.getCalendarsByID(CAL_ID)[0];
        for (var i=0; i<len(holidays)/2; i+=2){
        var events = calendar.getEvents(holidays[i], holidays[i+1]);
         }
        for(var i=0; i<events.length;i++){
             var ev = events[i];
-            Logger.log(ev.getTitle()); // show event name in log
+            console.log(ev.getTitle()); // show event name in log
             ev.deleteEvent();
             }
-
+*/
        //appendPre('Holidays removed');
      }
 
