@@ -63,7 +63,7 @@ var date3 = { //dateTime date followed by # of times recurring for tri 2 periods
     3: '2019-03-06',
     4: '2019-03-07',
     5: '2019-03-08',
-    end: '20190521T000000Z'
+    end: '20190517T000000Z'
 }
 
 var holidays = //timeMin/timeMax when searching event instances i%2=0: min, i%2=1: max
