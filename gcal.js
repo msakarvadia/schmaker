@@ -149,7 +149,7 @@
 
        //add holidays/extended events to holidayEvents
        var holidayEvents = [];
-       for (var i=0; i<holidays/2; i+=2) {
+       for (var i=0; i<len(holidays)/2; i+=2) {
            for (var j=0; j<EVENT_IDS.length; j++) {
                var request = gapi.client.calendar.events.instances({
                    'calendarId': CAL_ID,
