@@ -40,29 +40,29 @@ var endTime = {
 }
 
 var date1 = { //dateTime date followed by # of times recurring for tri 1 periods in Google Event making
-    1: '2018-08-21',
-    2: '2018-08-15',
-    3: '2018-08-16',
-    4: '2018-08-17',
-    5: '2018-08-18',
-    end: '20181027T000000Z'
+    1: '2018-08-20',
+    2: '2018-08-21',
+    3: '2018-08-22',
+    4: '2018-08-16',
+    5: '2018-08-17',
+    end: '20181026T000000Z'
 }
 
 var date2 = { //dateTime date followed by # of times recurring for tri 2 periods in Google Event making
-    1: '2018-11-13',
-    2: '2018-11-07',
-    3: '2018-11-08',
-    4: '2018-11-09',
-    5: '2018-11-10',
-    end: '20190206T000000Z'
+    1: '2018-11-12',
+    2: '2018-11-13',
+    3: '2018-11-07',
+    4: '2018-11-08',
+    5: '2018-11-09',
+    end: '20190208T000000Z'
 }
 
 var date3 = { //dateTime date followed by # of times recurring for tri 2 periods in Google Event making
-    1: '2019-02-26',
-    2: '2019-02-27',
-    3: '2019-02-28',
-    4: '2019-03-01',
-    5: '2019-03-02',
+    1: '2019-03-04',
+    2: '2019-03-05',
+    3: '2019-03-06',
+    4: '2019-03-07',
+    5: '2019-03-08',
     end: '20190520T000000Z'
 }
 
